@@ -2,31 +2,173 @@
 <html lang="en">
 
 <head>
-  <title>bomb</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Office
+  </title>
+  <link rel="stylesheet" href="style.css"> <!-- file does not exist -->
 </head>
 
-<!-- example comment -->
-
 <body>
-  <h1>the website</h1>
-  <h2>is the</h2>
-  <h3>bomb</h3>
-  <p> this is a short paragraph </p>
+  <span></span>
+  <header>
+    <h1>Welcome to The Office Meeting</h1>
+    <nav>
+      <a href="#agenda">Agenda</a> |
+      <a href="#unfinished">Unfinished Business</a> |
+      <a href="#new-business">New Business</a>
+    </nav>
+  </header>
 
-  <h2>Required Tags</h2>
-  <ul>
-    <li>title</li>
-    <li>subtitle topic</li>
-    <li>subtitle date</li>
-    <li>attendance</li>
-    <li>unfinsihed business</li>
-    <li>misc comments, questions, etc.</li>
-    <li>picutres/diagrams</li>
-    <img src="screenshots/example.png" alt="description" width="300" height="200"/>
-    <li>whiteboard?</li>
-    <li>audio clip</li>
-    <li>video clip</li>
-  </ul>
+  <main>
+    <div>
+      <h2>Pretzel Day!</h2>
+      <h3>Date: April 26, 2010</h3>
+      <p><strong>Attendance:</strong></p>
+      <form>
+        <div>
+          <input type="checkbox" id="michael" name="michael">
+          <label for="michael">Michael</label>
+        </div>
+        <div>
+          <input type="checkbox" id="dwight" name="dwight">
+          <label for="dwight">Dwight</label>
+        </div>
+        <div>
+          <input type="checkbox" id="jim" name="jim">
+          <label for="jim">Jim</label>
+        </div>
+        <div>
+          <input type="checkbox" id="pam" name="pam">
+          <label for="pam">Pam</label>
+        </div>
+        <div>
+          <input type="checkbox" id="oscar" name="oscar">
+          <label for="oscar">Oscar</label>
+        </div>
+        <div>
+          <input type="checkbox" id="angela" name="angela">
+          <label for="angela">Angela</label>
+        </div>
+        <div>
+          <input type="checkbox" id="kevin" name="kevin">
+          <label for="kevin">Kevin</label>
+        </div>
+        <div>
+          <input type="checkbox" id="phyllis" name="phyllis">
+          <label for="phyllis">Phyllis</label>
+        </div>
+        <div>
+          <input type="checkbox" id="andy" name="andy">
+          <label for="andy">Andy</label>
+        </div>
+        <div>
+          <input type="checkbox" id="stanley" name="stanley">
+          <label for="stanley">Stanley</label>
+        </div>
+        <div>
+          <input type="checkbox" id="toby" name="toby">
+          <label for="toby">Toby</label>
+        </div>
+      </form>
+
+      <hr>
+
+    </div>
+
+    <section id="agenda">
+      <h3>Agenda</h3>
+      <ol>
+        <li>Review last meeting's action items</li>
+        <li>Print new stack of paper to print</li>
+        <li>Sell new box of paper</li>
+      </ol>
+      <hr>
+    </section>
+
+    <section id="unfinished">
+      <h3>Unfinished Business from Last Meeting</h3>
+      <ul>
+        <li>Find new source for plastic wrap</li>
+        <li>Design new pen sample</li>
+      </ul>
+      <hr>
+    </section>
+
+    <section id="new-business">
+      <h3>New Business</h3>
+      <ul>
+        <li>Outreach to new partners</li>
+        <li>Make signs for on sale paper</li>
+      </ul>
+      <hr>
+    </section>
+
+    <section>
+      <h3>Miscellaneous Comments</h3>
+      <details>
+        <summary>View Comments</summary>
+        <p>Concerns about current project timelines and resource allocation.</p>
+      </details>
+      <hr>
+    </section>
+
+    <section>
+      <h3>Project Planning</h3>
+      <img src="/media/image.jpg" width="640" height="480" alt="Video Development">
+      <hr>
+    </section>
+
+    <section>
+      <h3>Audio</h3>
+      <audio controls>
+        <source src="/media/steak.ogg" type="audio/ogg">
+        <b>Your browser does not support this audio.</b><br>
+      </audio>
+      <hr>
+    </section>
+    <section>
+      <h3>Recordings</h3>
+      <video width="640" height="480" controls>
+        <source src="/media/teamintro.mp4" type="video/mp4">
+        <i>Your browser does not support this video.</i><br>
+      </video>
+      <hr>
+    </section>
+
+    <section id="feedback">
+      <h3>Feedback Survey</h3>
+      <form action="/submit-feedback" method="post">
+        <fieldset>
+          <legend>Your feedback</legend>
+          <p><label for="satisfaction">Satisfaction with the meeting:</label>
+            <select id="satisfaction" name="satisfaction">
+              <option value="very_satisfied">Fabulous Paper</option>
+              <option value="satisfied">Satisfying Paper</option>
+              <option value="neutral">Paper</option>
+              <option value="dissatisfied">Bad Paper</option>
+              <option value="very_dissatisfied">Terrible Paper</option>
+            </select>
+          </p>
+          <p><label for="followup">Select topic for follow-up:</label>
+            <input list="topics" name="topic" id="followup">
+            <datalist id="topics">
+              <option value="Paper Making">
+              <option value="Selling Paper">
+              <option value="Printing Sales">
+            </datalist>
+          </p>
+          <textarea name="additionalFeedback" rows="4" cols="50" placeholder="Additional feedback"></textarea>
+          <button type="submit">Submit Feedback</button>
+          <input type="submit" value="Submit Feedback">
+        </fieldset>
+      </form>
+    </section>
+
+    <footer>
+      <p><em>Buy Dunnder Mifflin Paper!</em></p>
+      <a href="https://dundermifflinpaper.com/"> Dunnder Mifflin Paper Co.</a>
+    </footer>
+  </main>
 </body>
 
 </html>
