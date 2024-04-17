@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3
 
-https://nirvekpanda.github.io/110_lab2/
+https://nirvekpanda.github.io/sp24-cse110-lab3/
