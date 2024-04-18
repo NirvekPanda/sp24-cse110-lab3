@@ -1,0 +1,35 @@
+.jacquard-24-regular {
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+
+    background-color: #889A92;
+    /* background */
+    text-align: center;
+    font-family: "Jacquard 24", system-ui;
+    font-size: x-large;
+
+    /* margin short */
+    margin: 10px, 10px, 20px, 20px;
+
+    /* padding long */
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+
+    /* border */
+    border-style: dotted;
+    border-color: rgb(69, 69, 69);
+    border-width: 5px;
+    border-radius: 20px;
+
+    h1 {
+        color: rgb(0,100,100);
+
+    }
+
+}
