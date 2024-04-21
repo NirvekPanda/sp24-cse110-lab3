@@ -119,18 +119,7 @@ section {
     }
 }
 
-#project-planning {
-    .grid{
-        display:grid;
-        gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
-    }
-    img {
-        padding: 5px
-
-    }
-
-}
+#project-planning {}
 
 #audio {}
 
