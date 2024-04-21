@@ -53,8 +53,8 @@ body {
 
 main {
     h2 {
+        text-align: center;
         float: center;
-        align-content: center;
     }
 
 }
@@ -109,7 +109,15 @@ section {
 
 #new-business {}
 
-#miscellaneous {}
+#miscellaneous {
+    summary {
+        padding-left: 25px;
+    }
+
+    p {
+        margin-left: 2cm;
+    }
+}
 
 #project-planning {}
 
