@@ -6,7 +6,7 @@
 
 header {
 
-    background-color: #889A92;
+    background-color: hsl(9, 100%, 80%, 0.85);
     /* background */
     text-align: center;
     font-family: "Jacquard 24", system-ui;
@@ -28,23 +28,35 @@ header {
     border-radius: 20px;
 
     h1 {
-        color: rgb(0, 100, 100);
+        color: #646464;
         line-height: 1;
     }
 }
 
 body {
+
     font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
+
+
     background: #f0f0f0;
-    background-color: azure;
+    /*background-color: azure;*/
+    background-image: linear-gradient(azure, MediumSeaGreen);
 
     h2,
     h3 {
         font-family: 'Times New Roman', serif;
         margin-left: 20px;
     }
+}
+
+main {
+    h2 {
+        float: center;
+        align-content: center;
+    }
+
 }
 
 nav a {
