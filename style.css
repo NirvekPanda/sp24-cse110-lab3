@@ -99,7 +99,8 @@ section {
 
     input[type="checkbox"]:checked+label {
         text-decoration: underline;
-        padding-left: 25px;
+        padding-left: 50px;
+        color: darkgreen;
     }
 }
 
@@ -120,19 +121,34 @@ section {
 }
 
 #project-planning {
-    .grid{
-        display:grid;
+    .grid {
+        display: grid;
         gap: 10px;
         grid-template-columns: repeat(3, 1fr);
     }
-    img {
-        padding: 5px
 
+    img {
+        position: relative;
+        padding: 5px
     }
 
+    @media (img: hover) {}
+
+    @media (min-width: 200px) {
+        img:hover {
+            transform: scale(1.2);
+            transition: transform 0.5s ease-in-out;
+        }
+    }
 }
 
-#audio {}
+#audio {
+
+    audio:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s ease-in-out;
+    }
+}
 
 #recordings {}
 
