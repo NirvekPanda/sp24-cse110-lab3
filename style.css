@@ -177,10 +177,12 @@ section {
     margin-top: 2em;
 
     .pics {
-        display: inline-grid;
-        gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        flex-direction: columns;
         justify-content: var(--c);
+        flex-grow: 3;
     }
 
     img {
@@ -189,9 +191,9 @@ section {
         border: 5px solid #646464;
         border-radius: 2em;
         /*place-items: center;*/
-        width: 80%;
+        width: 18rem;
         /* got from chatGPT*/
-        height: 80%;
+        height: 18rem;
         /* got from chatGPT*/
     }
 
@@ -217,7 +219,7 @@ section {
     background-color: cadetblue;
 
     audio:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
         /* got from chatGPT*/
         transition: transform 0.5s ease-in-out;
         /* got from chatGPT*/
@@ -274,6 +276,7 @@ footer p:has(em) {
 }
 
 footer+a {
+    position: relative;
     margin-left: 25px;
     margin-bottom: 25px;
 }
