@@ -43,7 +43,7 @@ header {
 
     h1 {
         color: #646464;
-        line-height: 1.5;
+        line-height: .6;
         place-items: var(--c);
     }
 }
