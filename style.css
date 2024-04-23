@@ -1,3 +1,7 @@
+:root {
+    --c: center;
+}
+
 .jacquard-24-regular {
     font-family: "Jacquard 24", system-ui;
     font-weight: 400;
@@ -7,7 +11,7 @@
 * {
     margin: 10;
     /* Reset margins */
-    padding: 10;
+    padding: 1;
     /* Reset paddings */
 }
 
@@ -37,19 +41,32 @@ header {
     border-width: 5px;
     border-radius: 20px;
 
-    width: 75%;
-
     h1 {
         color: #646464;
-        line-height: 1;
+        line-height: 1.5;
+        place-items: var(--c);
+
     }
+}
+
+.top {
+    display: flex;
+    justify-content: var(--c);
+    align-items: var(--c);
+    flex-direction: column;
+    position: sticky;
+    top: 1rem;
+    align-items: center;
+    flex-direction: column;
+    width: 65%;
+    z-index: 1000;
+    /* from chatGPT */
 }
 
 body {
     font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-
 
     background: #f0f0f0;
     /*background-color: azure;*/
@@ -59,13 +76,14 @@ body {
     h3 {
         font-family: 'Times New Roman', serif;
         margin-left: 20px;
+        font-size: large;
     }
 }
 
 main {
     h2 {
-        text-align: center;
-        float: center;
+        text-align: var(--c);
+        float: var(--c);
     }
 
 }
@@ -113,6 +131,11 @@ section {
     #miscellaneous~p {
         margin-left: 5%;
     }
+
+    .studio {
+        justify-content: var(--c);
+        height: auto;
+    }
 }
 
 #attendance {
@@ -131,11 +154,17 @@ section {
         line-height: 0.02;
     }
 
+    /* From ChatGPT */
+    input[type="checkbox"]+label {
+        cursor: pointer;
+    }
+
     input[type="checkbox"]:checked+label {
         text-decoration: underline;
         padding-left: 50px;
         color: darkgreen;
     }
+
 }
 
 #project-planning {
@@ -145,16 +174,19 @@ section {
         display: inline-grid;
         gap: 10px;
         grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
+        justify-content: var(--c);
     }
 
     img {
         position: relative;
         padding: 10px;
-        gap: 1em;
         border: 5px solid #646464;
         border-radius: 2em;
-        place-items: center;
+        /*place-items: center;*/
+        width: 80%;
+        /* got from chatGPT*/
+        height: 80%;
+        /* got from chatGPT*/
     }
 
     @media (img: hover) {}
@@ -167,9 +199,16 @@ section {
             /* got from chatGPT*/
         }
     }
+
+    width: 75%;
+
 }
 
 #audio {
+    text-align: var(--c);
+    justify-content: var(--c);
+
+    background-color: cadetblue;
 
     audio:hover {
         transform: scale(1.1);
@@ -177,9 +216,45 @@ section {
         transition: transform 0.5s ease-in-out;
         /* got from chatGPT*/
     }
+
+    width: 60%;
 }
 
-#recordings {}
+#recordings {
+    display: grid;
+    place-items: center;
+
+    .video {
+        border: 15px solid white;
+        border-radius: 1em;
+        width: 50vw;
+        height: 50vh;
+    }
+
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    flex-grow: 2;
+    /*    flex-shrink: 5;*/
+
+}
+
+.vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 h3.fb {
     color: #f44f4f;
