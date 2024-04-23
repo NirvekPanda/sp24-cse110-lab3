@@ -143,6 +143,10 @@ section {
         justify-content: var(--c);
         height: auto;
     }
+
+    .misc {
+        margin-left: 5%;
+    }
 }
 
 #attendance {
