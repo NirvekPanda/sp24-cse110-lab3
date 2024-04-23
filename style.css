@@ -4,6 +4,14 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 10;
+    /* Reset margins */
+    padding: 10;
+    /* Reset paddings */
+}
+
 header {
 
     background-color: hsl(9, 100%, 80%, 0.85);
@@ -19,7 +27,7 @@ header {
     padding-bottom: 25px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 1px;
+    padding-top: 15px;
 
     /* border */
     border-style: dotted;
@@ -104,20 +112,22 @@ section {
     }
 }
 
-#agenda {}
-
-#unfinished {}
-
-#new-business {}
-
-#miscellaneous {
-    summary {
-        padding-left: 25px;
+#agenda,
+#new-business,
+#unfinished {
+    ul li {
+        color: rgb(69, 69, 69);
     }
 
-    p {
-        margin-left: 2cm;
-    }
+}
+
+#miscellaneous>summary,
+p {
+    padding-left: 50px;
+}
+
+#miscellaneous~p {
+    margin-left: 5cm;
 }
 
 #project-planning {
@@ -152,6 +162,17 @@ section {
 
 #recordings {}
 
-#feedback {}
+h3.fb {
+    color: #f44f4f;
+    text-align: center;
+}
 
-footer {}
+footer p:has(em) {
+    color: darkcyan;
+
+}
+
+footer+a {
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
