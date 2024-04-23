@@ -71,7 +71,7 @@ body {
 
     background: #f0f0f0;
     /*background-color: azure;*/
-    background-image: linear-gradient(azure, MediumSeaGreen);
+    background-image: linear-gradient(rgba(2, 100, 100, .85), rgba(1, 25, 25, .5));
 
     h2 {
         font-size: xx-large;
@@ -86,10 +86,6 @@ body {
         text-align: center;
         text-decoration: underline;
     }
-
-    p,
-    ul,
-    li {}
 }
 
 main {
