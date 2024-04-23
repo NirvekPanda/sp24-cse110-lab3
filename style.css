@@ -144,7 +144,8 @@ section {
         height: auto;
     }
 
-    .misc {
+    .misc,
+    a {
         margin-left: 5%;
     }
 }
