@@ -20,7 +20,7 @@ header {
     justify-content: center;
     align-items: center;
 
-    background-color: hsl(9, 100%, 80%, 0.85);
+    background-color: hsl(240, 100%, 80%, 0.75);
     /* background */
     text-align: center;
     font-family: "Jacquard 24", system-ui;
@@ -45,7 +45,6 @@ header {
         color: #646464;
         line-height: 1.5;
         place-items: var(--c);
-
     }
 }
 
@@ -58,7 +57,9 @@ header {
     top: 1rem;
     align-items: center;
     flex-direction: column;
-    width: 65%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     z-index: 1000;
     /* from chatGPT */
 }
@@ -72,12 +73,23 @@ body {
     /*background-color: azure;*/
     background-image: linear-gradient(azure, MediumSeaGreen);
 
-    h2,
+    h2 {
+        font-size: xx-large;
+        text-decoration: underline;
+        text-align: center;
+    }
+
     h3 {
         font-family: 'Times New Roman', serif;
-        margin-left: 20px;
-        font-size: large;
+        /*margin-left: 20px;*/
+        font-size: x-large;
+        text-align: center;
+        text-decoration: underline;
     }
+
+    p,
+    ul,
+    li {}
 }
 
 main {
@@ -107,13 +119,11 @@ nav a:hover {
 
 section {
     display: grid;
-    background-color: #fdfdfdaa;
+    background-image: radial-gradient(circle, #68b680, #92bee0);
     margin: 0.5em;
     padding: 15px;
     border: 10px soild#646464;
-
     border-radius: 2em;
-
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
 
     agenda,
@@ -125,7 +135,7 @@ section {
 
     #miscellaneous>summary,
     p {
-        padding-left: 15px;
+        padding-left: 10px;
     }
 
     #miscellaneous~p {
@@ -229,6 +239,7 @@ section {
         border-radius: 1em;
         width: 50vw;
         height: 50vh;
+        padding-bottom: 10px;
     }
 
     width: 70%;
@@ -259,6 +270,7 @@ section {
 h3.fb {
     color: #f44f4f;
     text-align: center;
+    font-size: larger;
 }
 
 footer p:has(em) {
