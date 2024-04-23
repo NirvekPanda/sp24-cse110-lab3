@@ -5,7 +5,6 @@
 }
 
 * {
-    box-sizing: border-box;
     margin: 10;
     /* Reset margins */
     padding: 10;
@@ -13,6 +12,9 @@
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     background-color: hsl(9, 100%, 80%, 0.85);
     /* background */
@@ -35,6 +37,8 @@ header {
     border-width: 5px;
     border-radius: 20px;
 
+    width: 75%;
+
     h1 {
         color: #646464;
         line-height: 1;
@@ -42,7 +46,6 @@ header {
 }
 
 body {
-
     font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
@@ -78,16 +81,38 @@ nav a:hover {
     color: lightblue;
 }
 
-section {
-    display: box;
-    background-color: #fdfdfdaa;
-    margin: 20px;
-    padding-left: 20px;
-    padding: 20px;
+.center {
+    display: grid;
+    gap: 2%;
+    grid-template-columns: repeat(2, 1fr);
+}
 
-    border-radius: 1rem;
+section {
+    display: grid;
+    background-color: #fdfdfdaa;
+    margin: 0.5em;
+    padding: 15px;
+    border: 10px soild#646464;
+
+    border-radius: 2em;
 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+
+    agenda,
+    unfinished,
+    new-business {
+        color: rgb(69, 69, 69);
+        /*width: 50%;*/
+    }
+
+    #miscellaneous>summary,
+    p {
+        padding-left: 15px;
+    }
+
+    #miscellaneous~p {
+        margin-left: 5%;
+    }
 }
 
 #attendance {
@@ -97,8 +122,9 @@ section {
 
     background-color: #9d9d9daa;
     margin: 25px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.9);
+    border-radius: 1rem;
 
     p {
         font-size: larger;
@@ -112,34 +138,23 @@ section {
     }
 }
 
-#agenda,
-#new-business,
-#unfinished {
-    ul li {
-        color: rgb(69, 69, 69);
-    }
-
-}
-
-#miscellaneous>summary,
-p {
-    padding-left: 50px;
-}
-
-#miscellaneous~p {
-    margin-left: 5cm;
-}
-
 #project-planning {
-    .grid {
-        display: grid;
+    margin-top: 2em;
+
+    .pics {
+        display: inline-grid;
         gap: 10px;
         grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
     }
 
     img {
         position: relative;
-        padding: 5px
+        padding: 10px;
+        gap: 1em;
+        border: 5px solid #646464;
+        border-radius: 2em;
+        place-items: center;
     }
 
     @media (img: hover) {}
@@ -147,7 +162,9 @@ p {
     @media (min-width: 200px) {
         img:hover {
             transform: scale(1.2);
+            /* got from chatGPT*/
             transition: transform 0.5s ease-in-out;
+            /* got from chatGPT*/
         }
     }
 }
@@ -156,7 +173,9 @@ p {
 
     audio:hover {
         transform: scale(1.1);
+        /* got from chatGPT*/
         transition: transform 0.5s ease-in-out;
+        /* got from chatGPT*/
     }
 }
 
