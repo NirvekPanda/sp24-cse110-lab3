@@ -15,28 +15,32 @@
 
 <body>
   <span></span>
-  <header>
-    <h1">Welcome to The Office Meeting</h1>
-      <nav>
-        <a href="#agenda">Agenda</a> |
-        <a href="#unfinished">Unfinished Business</a> |
-        <a href="#new-business">New Business</a>
-      </nav>
+  <header class="top">
+    <div class="head">
+      <div>
 
+        <h1">The Office Meeting</h1>
+          <nav>
+            <a href="#agenda">Agenda</a> |
+            <a href="#unfinished">Unfinished Business</a> |
+            <a href="#new-business">New Business</a>
+          </nav>
 
-      <style>
-        body {
-          h3 {
-            font-size: 2vw;
-            color: darkcyan;
-          }
+          <style>
+            body {
+              h3 {
+                font-size: 2vw;
+                color: darkcyan;
+              }
 
-          form {
-            font-size: 20px;
-            color: #001100
-          }
-        }
-      </style>
+              form {
+                font-size: 20px;
+                color: #001100
+              }
+            }
+          </style>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -99,91 +103,98 @@
       <hr>
 
     </div>
+    <div class="center">
+      <section id="agenda" class="body">
+        <h3>Agenda</h3>
+        <ol>
+          <li>Review last meeting's action items</li>
+          <li>Print new stack of paper to print</li>
+          <li>Sell new box of paper</li>
+        </ol>
+      </section>
 
-    <section id="agenda">
-      <h3>Agenda</h3>
-      <ol>
-        <li>Review last meeting's action items</li>
-        <li>Print new stack of paper to print</li>
-        <li>Sell new box of paper</li>
-      </ol>
-      <hr>
-    </section>
+      <section id="unfinished" class="body">
+        <h3>Unfinished Business from Last Meeting</h3>
+        <ul>
+          <li>Find new source for plastic wrap</li>
+          <li>Design new pen sample</li>
+          <li>Improve documentation </li>
+        </ul>
+      </section>
 
-    <section id="unfinished">
-      <h3>Unfinished Business from Last Meeting</h3>
-      <ul>
-        <li>Find new source for plastic wrap</li>
-        <li>Design new pen sample</li>
-      </ul>
-      <hr>
-    </section>
+      <section id="new-business" class="body">
+        <h3>New Business</h3>
+        <ul>
+          <li>Outreach to new partners</li>
+          <li>Make signs for on sale paper</li>
+          <li>Process paper factory notes</li>
+        </ul>
+      </section>
 
-    <section id="new-business">
-      <h3>New Business</h3>
-      <ul>
-        <li>Outreach to new partners</li>
-        <li>Make signs for on sale paper</li>
-      </ul>
-      <hr>
-    </section>
-
-    <section id="miscellaneous">
-      <h3>Miscellaneous Comments</h3>
-      <details>
-        <summary>View Comments</summary>
-        <p>Concerns about current project timelines and resource allocation.</p>
-        <p>Buy more paper, from Dunder Mifflin!</p>
-      </details>
-      <details>
-        <summary>Human Resources</summary>
-        <p>Someone get Michael out of here.</p>
-      </details>
-      <hr>
-    </section>
-
-    <section id="project-planning">
-      <h3>Project Planning</h3>
-      <img src="https://www.quill.com/is/image/Quill/62912EB4-204B-4C48-8F421977A01C07A6_s7?$img320$" width="320"
-        height="320" alt="Copy Paper">
-      <img
-        src="https://bloximages.newyork1.vip.townnews.com/gazette.com/content/tncms/assets/v3/editorial/f/0b/f0b55c2b-947f-510a-9e1f-aefd6aa458ef/5b32bc00c648f.image.jpg?crop=368%2C276%2C65%2C0&resize=1200%2C900&order=crop%2Cresize"
-        width="320" height="320" alt="Copy Paper">
-      <img src="https://newsfeed.time.com/wp-content/uploads/sites/9/2011/11/dundermifflin.jpg?w=480&h=320&crop=1"
-        width="320" height="320" alt="Copy Paper">
-      <img
-        src="https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.syracuse.com/home/syr-media/width2048/img/entertainment_impact/photo/dunder-mifflinjpg-aa2151dba1ed4d43.jpg"
-        width="320" height="320" alt="Copy Paper">
-      <img
-        src="https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.syracuse.com/home/syr-media/width2048/img/entertainment_impact/photo/dunder-mifflinjpg-aa2151dba1ed4d43.jpg"
-        width="320" height="320" alt="Copy Paper">
-      <img src="https://m.media-amazon.com/images/I/817ZzKsSpGL.jpg" width="320" height="320" alt="Copy Paper">
-      <img
-        src="https://hellosubscription.com/wp-content/uploads/2021/06/the-office-spring-2021-12.jpg?quality=90&strip=all"
-        width="320" height="320" alt="Copy Paper">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSUvBUZtmDMWiEYz4xlGy5_p1FAjUNstsBvL1NVpSDnA&s"
-        width="320" height="320" alt="Copy Paper">
-      <img src="https://www.quill.com/is/image/Quill/235E1686-8E5C-4B99-80A066B17B1A105B_s7?$img320$" width="320"
-        height="320" alt="Copy Paper">
-      <hr>
-    </section>
-
-    <section id="audio">
-      <h3>Audio</h3>
-      <audio controls>
-        <source src="/media/steak.ogg" type="audio/ogg">
-        <b>Your browser does not support this audio.</b><br>
-      </audio>
-      <hr>
-    </section>
-    <section id="recordings">
-      <h3>Recordings</h3>
-      <video width="640" height="480" controls>
-        <source src="/media/teamintro.mp4" type="video/mp4">
-        <i>Your browser does not support this video.</i><br>
-      </video>
-      <hr>
-    </section>
+      <section id="miscellaneous" class="body">
+        <h3>Miscellaneous Comments</h3>
+        <details>
+          <summary>View Comments</summary>
+          <p>Concerns about current project timelines and resource allocation.</p>
+          <p>Buy more paper, from Dunder Mifflin!</p>
+        </details>
+        <details>
+          <summary>Human Resources</summary>
+          <p>Someone get Michael out of here.</p>
+        </details>
+      </section>
+    </div>
+    <div class="container"></div>
+    <div class="vertical">
+      <section id="project-planning">
+        <h3>Project Planning</h3>
+        <div class="pics">
+          <img src="https://www.quill.com/is/image/Quill/62912EB4-204B-4C48-8F421977A01C07A6_s7?$img320$" width="320"
+            height="320" alt="Copy Paper">
+          <img
+            src="https://bloximages.newyork1.vip.townnews.com/gazette.com/content/tncms/assets/v3/editorial/f/0b/f0b55c2b-947f-510a-9e1f-aefd6aa458ef/5b32bc00c648f.image.jpg?crop=368%2C276%2C65%2C0&resize=1200%2C900&order=crop%2Cresize"
+            alt="Copy Paper">
+          <img src="https://newsfeed.time.com/wp-content/uploads/sites/9/2011/11/dundermifflin.jpg?w=480&h=320&crop=1"
+            alt="Copy Paper">
+          <img
+            src="https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.syracuse.com/home/syr-media/width2048/img/entertainment_impact/photo/dunder-mifflinjpg-aa2151dba1ed4d43.jpg"
+            alt="Copy Paper">
+          <img
+            src="https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.syracuse.com/home/syr-media/width2048/img/entertainment_impact/photo/dunder-mifflinjpg-aa2151dba1ed4d43.jpg"
+            alt="Copy Paper">
+          <img src="https://m.media-amazon.com/images/I/817ZzKsSpGL.jpg" alt="Copy Paper">
+          <img
+            src="https://hellosubscription.com/wp-content/uploads/2021/06/the-office-spring-2021-12.jpg?quality=90&strip=all"
+            alt="Copy Paper">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSUvBUZtmDMWiEYz4xlGy5_p1FAjUNstsBvL1NVpSDnA&s"
+            alt="Copy Paper">
+          <img src="https://www.quill.com/is/image/Quill/235E1686-8E5C-4B99-80A066B17B1A105B_s7?$img320$"
+            alt="Copy Paper">
+        </div>
+      </section>
+    </div>
+    <div class="vertical">
+      <section id="audio">
+        <h3>Audio</h3>
+        <audio controls>
+          <source src="https://www.orangefreesounds.com/wp-content/uploads/2020/12/Meat-sizzling-sound-effect.mp3?_=1"
+            type="audio/ogg">
+          <b>Your browser does not support this audio.</b><br>
+        </audio>
+      </section>
+    </div>
+    <div class="vertical">
+      <section id="recordings" class="studio">
+        <h3>Recordings</h3>
+        <iframe src="https://www.youtube.com/embed/q5HPSAvT3i8" title="The Office" class="video" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          <i>Your browser does not support this video.</i><br>
+        </iframe>
+      </section>
+    </div>
+    </div>
 
     <section id="feedback">
       <h3 class="fb">Feedback Survey</h3>
