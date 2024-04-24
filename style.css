@@ -92,7 +92,7 @@ body>h3 {
 
 main h2 {
     text-align: var(--c);
-    float: var(--c);
+    float: center;
 }
 
 nav a {
@@ -121,26 +121,25 @@ section {
     border-radius: 2em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
 
+}
 
+#miscellaneous>summary,
+p {
+    padding-left: 10px;
+}
 
-    #miscellaneous>summary,
-    p {
-        padding-left: 10px;
-    }
+#miscellaneous~p {
+    margin-left: 5%;
+}
 
-    #miscellaneous~p {
-        margin-left: 5%;
-    }
+.studio {
+    justify-content: var(--c);
+    height: auto;
+}
 
-    .studio {
-        justify-content: var(--c);
-        height: auto;
-    }
-
-    .misc,
-    a {
-        margin-left: 5%;
-    }
+.misc,
+a {
+    margin-left: 5%;
 }
 
 #agenda,
@@ -162,15 +161,17 @@ section {
     border-radius: 1rem;
 
     /* From ChatGPT */
-    input[type="checkbox"]+label {
-        cursor: pointer;
-    }
 
-    input[type="checkbox"]:checked+label {
-        text-decoration: underline;
-        padding-left: 50px;
-        color: darkgreen;
-    }
+}
+
+#attendace>input[type="checkbox"]+label {
+    cursor: pointer;
+}
+
+#attendace>input[type="checkbox"]:checked+label {
+    text-decoration: underline;
+    padding-left: 50px;
+    color: darkgreen;
 }
 
 #attendance>p {
@@ -220,32 +221,32 @@ img {
     justify-content: var(--c);
 
     background-color: cadetblue;
+}
 
-    audio:hover {
-        transform: scale(1.2);
-        /* got from chatGPT*/
-        transition: transform 0.5s ease-in-out;
-        /* got from chatGPT*/
-    }
+#audio:hover {
+    transform: scale(1.2);
+    /* got from chatGPT*/
+    transition: transform 0.5s ease-in-out;
+    /* got from chatGPT*/
 }
 
 #recordings {
     display: grid;
     place-items: center;
 
-    .video {
-        border: 15px solid white;
-        border-radius: 1em;
-        width: 50vw;
-        height: 50vh;
-        padding-bottom: 10px;
-    }
-
     width: 70%;
     text-align: center;
     justify-content: center;
     /* Center the content horizontally */
     align-items: center;
+}
+
+.video {
+    border: 15px solid white;
+    border-radius: 1em;
+    width: 50vw;
+    height: 50vh;
+    padding-bottom: 10px;
 }
 
 .container {
