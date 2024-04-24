@@ -173,11 +173,11 @@ h3:hover {
 
 }
 
-#attendace>input[type="checkbox"]+label {
+input[type="checkbox"]+label {
     cursor: pointer;
 }
 
-#attendace>input[type="checkbox"]:checked+label {
+input[type="checkbox"]:checked+label {
     text-decoration: underline;
     padding-left: 50px;
     color: darkgreen;
