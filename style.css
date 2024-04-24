@@ -74,7 +74,7 @@ body {
     background-image: linear-gradient(rgba(2, 100, 100, .85), rgba(1, 25, 25, .5));
 }
 
-body~h2 {
+h2 {
     font-size: xx-large;
     text-decoration: underline;
     text-align: center;
@@ -82,7 +82,7 @@ body~h2 {
 
 }
 
-body>h3 {
+h3 {
     font-family: 'Times New Roman', serif;
     /*margin-left: 20px;*/
     font-size: x-large;
@@ -145,9 +145,18 @@ a {
 #agenda,
 #unfinished,
 #new-business {
-    color: rgb(69, 69, 69);
+    color: rgb(103, 61, 61);
     /*width: 50%;*/
 }
+
+h3 {
+    color: #f44f4f
+}
+
+h3:hover {
+    color: seagreen;
+}
+
 
 #attendance {
     display: grid;
