@@ -59,7 +59,7 @@ header {
     flex-direction: column;
     width: 70%;
     margin-left: 15%;
-    margin-right: 15%;
+    /*margin-right: 15%; */
     z-index: 1000;
     /* from chatGPT */
 }
@@ -230,8 +230,6 @@ section {
         transition: transform 0.5s ease-in-out;
         /* got from chatGPT*/
     }
-
-    width: 60%;
 }
 
 #recordings {
