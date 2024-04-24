@@ -40,12 +40,12 @@ header {
     border-color: rgb(69, 69, 69);
     border-width: 5px;
     border-radius: 20px;
+}
 
-    h1 {
-        color: #646464;
-        line-height: .6;
-        place-items: var(--c);
-    }
+header>h1 {
+    color: #646464;
+    line-height: .6;
+    place-items: var(--c);
 }
 
 .top {
@@ -72,29 +72,27 @@ body {
     background: #f0f0f0;
     /*background-color: azure;*/
     background-image: linear-gradient(rgba(2, 100, 100, .85), rgba(1, 25, 25, .5));
-
-    h2 {
-        font-size: xx-large;
-        text-decoration: underline;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    h3 {
-        font-family: 'Times New Roman', serif;
-        /*margin-left: 20px;*/
-        font-size: x-large;
-        text-align: center;
-        text-decoration: underline;
-    }
 }
 
-main {
-    h2 {
-        text-align: var(--c);
-        float: var(--c);
-    }
+body~h2 {
+    font-size: xx-large;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
 
+}
+
+body>h3 {
+    font-family: 'Times New Roman', serif;
+    /*margin-left: 20px;*/
+    font-size: x-large;
+    text-align: center;
+    text-decoration: underline;
+}
+
+main h2 {
+    text-align: var(--c);
+    float: var(--c);
 }
 
 nav a {
@@ -123,12 +121,7 @@ section {
     border-radius: 2em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
 
-    agenda,
-    unfinished,
-    new-business {
-        color: rgb(69, 69, 69);
-        /*width: 50%;*/
-    }
+
 
     #miscellaneous>summary,
     p {
@@ -150,6 +143,13 @@ section {
     }
 }
 
+#agenda,
+#unfinished,
+#new-business {
+    color: rgb(69, 69, 69);
+    /*width: 50%;*/
+}
+
 #attendance {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -161,11 +161,6 @@ section {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.9);
     border-radius: 1rem;
 
-    p {
-        font-size: larger;
-        line-height: 0.02;
-    }
-
     /* From ChatGPT */
     input[type="checkbox"]+label {
         cursor: pointer;
@@ -176,46 +171,48 @@ section {
         padding-left: 50px;
         color: darkgreen;
     }
+}
 
+#attendance>p {
+    font-size: larger;
+    line-height: 0.02;
 }
 
 #project-planning {
     margin-top: 2em;
-
-    .pics {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-        flex-direction: columns;
-        justify-content: var(--c);
-        flex-grow: 3;
-    }
-
-    img {
-        position: relative;
-        padding: 10px;
-        border: 5px solid #646464;
-        border-radius: 2em;
-        /*place-items: center;*/
-        width: 18rem;
-        /* got from chatGPT*/
-        height: 18rem;
-        /* got from chatGPT*/
-    }
-
-    @media (img: hover) {}
-
-    @media (min-width: 200px) {
-        img:hover {
-            transform: scale(1.2);
-            /* got from chatGPT*/
-            transition: transform 0.5s ease-in-out;
-            /* got from chatGPT*/
-        }
-    }
-
     width: 75%;
+}
 
+.pics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-direction: columns;
+    justify-content: var(--c);
+    flex-grow: 3;
+}
+
+img {
+    position: relative;
+    padding: 10px;
+    border: 5px solid #646464;
+    border-radius: 2em;
+    /*place-items: center;*/
+    width: 18rem;
+    /* got from chatGPT*/
+    height: 18rem;
+    /* got from chatGPT*/
+}
+
+@media (img: hover) {}
+
+@media (min-width: 200px) {
+    img:hover {
+        transform: scale(1.2);
+        /* got from chatGPT*/
+        transition: transform 0.5s ease-in-out;
+        /* got from chatGPT*/
+    }
 }
 
 #audio {
